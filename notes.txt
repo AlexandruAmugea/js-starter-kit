@@ -41,3 +41,17 @@ Npm scripts
   -pretask - will run a task before the task
   npm run all - addon tu run all the task
   `npm-run-all --parallel`
+
+5. Transpiler
+Babel, Typescript, Elm
+
+Babel can be configured in .babelrc or package.json with 'babel: { options }'
+
+6. Bundlers
+
+Browserify, Webpack, Rollup, JSPM
+
+7. Linter
+JSLint, JSHint, ESLint
+
+Typescript: TSLint
