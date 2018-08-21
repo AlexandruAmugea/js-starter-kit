@@ -1,0 +1,43 @@
+1.Making an editor config
+  editorconfig.com
+  Add .editorconfig into the project and add the missing plugin
+
+2. Using package management
+NPM
+  For security run node security
+  ``npm i g nsp``
+  For running it locally just run `nsp check`
+
+3. Development server
+  http-server, live-server, express also you can use it in production
+  koa, hapi
+  webpack devserver
+  browsersync
+
+  Share in progress
+  localtunnel
+  `npm i localtunnel -g`
+  How to use:
+  run the application on the port whatever
+  Sau localtunnel to create the url
+  lt --port 3000 // will generate the url
+  lt --port 3000 --subdomain nameofsubdomain // as long as it isn't taken it will work
+
+
+  ngrok
+
+  now quick deploy node.js to the cloud
+  `npm i -g now`
+  Just type now
+
+  Surge
+  Only for static files
+  `npm i -g surge`
+
+4. Automation
+Grunt, Npm, Gulp
+Gulp is faster because of pipes which are stored in memory
+Npm scripts
+  -pretask - will run a task before the task
+  npm run all - addon tu run all the task
+  `npm-run-all --parallel`

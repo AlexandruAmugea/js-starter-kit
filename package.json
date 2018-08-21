@@ -1,0 +1,36 @@
+{
+  "name": "js-starter-kit",
+  "version": "1.0.0",
+  "description": "js-starter-kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "prestart": "node buildScripts/startMessage.js",
+    "start": "npm-run-all --parallel security-check open:src",
+    "open:src": "node buildScripts/srcServer.js",
+    "security-check": "nsp check",
+    "share": "lt --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandruAmugea/js-starter-kit.git"
+  },
+  "author": "Amugea Alexandru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexandruAmugea/js-starter-kit/issues"
+  },
+  "homepage": "https://github.com/AlexandruAmugea/js-starter-kit#readme",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-latest": "^6.14.1",
+    "babel-register": "^6.14.0",
+    "chalk": "^2.4.1",
+    "express": "^4.16.3",
+    "localtunnel": "^1.9.0",
+    "npm-run-all": "^4.1.3",
+    "open": "0.0.5"
+  }
+}
