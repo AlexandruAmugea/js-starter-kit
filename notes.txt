@@ -103,4 +103,7 @@ Server: Travis, Appveyour , Jenkins, circleci, semaphore, spanci
 
 For CI we ca use Travis just log in with github and activate the wanted repository
 
+For windows. appveyor.com
+
+
 
