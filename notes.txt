@@ -55,3 +55,49 @@ Browserify, Webpack, Rollup, JSPM
 JSLint, JSHint, ESLint
 
 Typescript: TSLint
+
+8. Testing and CI, Unit testing
+
+Testing a single function or module, assueres that a function return exactly what it needs, and the api are mocked and external depedencies.
+There is also integration testing, automating testing.
+Tools like selenium are popular in automating testing.
+There are six important decisions:
+Framework, assertion library , helper librarie, where to run , when to run.
+Testing frameworks:
+Mocka, Jasmine includes assertion library, Tape is the lineast and minimum configuration, Qunit for jquery.
+AVA a new framework runs in parallel and only rerun the one that aren t ok.
+JEST for React
+
+Assertion library is what you expect
+`expect(2+2).to.equal(4)`
+Chai, Should.js, Expect
+
+Helper library
+Simulate dom JSDOM
+Cheerio jquery for the server
+
+Where to run tests:
+Browser Karma, Testem can be runned headless
+Headless Browser PhantomJS this is faster
+In-Memory DOM: JSDOM
+
+Where do the test files belog:
+WE can use a folder Test avoid noise in src folder
+Deployment confusion
+
+The test in the same folder, easy imports, clear visibility, convenient to open togheter, no recreating folder structure
+same folder, easy files to move.
+Naming files .spec .test
+
+When to run:
+Everytime when you hit save, increase test visibility, low friction
+Difference between unit and integration
+Unit test a small unit fast, integration tests multiple units involves clicking and waiting they are slower
+They are runned on demand or in QA
+
+we will use mocka chai jsdom node
+
+Continous integration
+
+Server: Travis, Appveyour , Jenkins, circleci, semaphore, spanci
+
