@@ -1,21 +1,17 @@
 let express = require('express');
 let path = require('path');
 let open = require('open');
-import webpack from 'webpack';
-import config from '../webpack.config.dev';
+import compression from 'compression';
+
+/*esling-disable no-console*/
 
 const PORT = 3000;
 let app = express();
-
-const compiler = webpack(config);
-
-app.use(require('webpack-dev-middleware')(compiler, {
-  noInfo: true,
-  public: config.output.publicPath
-}));
+app.user(compression());
+app.user(express.static('dist'));
 
 app.get('/', (req, res)=> {
-  res.sendFile(path.join(__dirname, '../src/index.html'));
+  res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
 app.get('/users', function(req, res){

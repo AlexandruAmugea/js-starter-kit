@@ -103,4 +103,41 @@ Server: Travis, Appveyour , Jenkins, circleci, semaphore, spanci
 
 For CI we ca use Travis just log in with github and activate the wanted repository
 
+9. Mocking http calls
+Development webservers: api-mock, JSON server, JSON Schema faker
+BrowserSync, Express
+
+Recomended JSON Server + Json Schema Faker, or full api Express
+
+Plan:
+1.Declare schema json schema faker
+2.Generate random faker, chance.js , randexp.js
+3.Server data via API JSON Server
+
+This is the standard http://json-schema.org/ Also there is GraphQL and others
+
+10. Demo app
+- directory structure and file naming
+- framework usage
+- testing
+- mock api
+- automated deploment
+
+Codify decisions
+Interactive example of working with starter
+
+JS belongs in a .js file
+
+Consider organizing by feature
+Extract login in plain old js object POJOS
+
+11.Production build
+-minification
+-sourcemaps
+-dynamic html
+-cache busting
+-bundle spliting
+-error logging
+
+Minification - speeding and page load remove comments white space new lines Also tree-shaking unused code removed, debug via sourcemap
 
