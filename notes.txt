@@ -140,4 +140,16 @@ Extract login in plain old js object POJOS
 -error logging
 
 Minification - speeding and page load remove comments white space new lines Also tree-shaking unused code removed, debug via sourcemap
+Cache busting - set headers to the file so the browser will not request the file for up to one year
+Webpack will append a hash so the
 
+Error logging
+
+TrackJS, Sentry, New Relic, Raygun
+Does in provide error metadata browser, stack trave previous actions customp api like integration with
+slack
+
+Automation deployment
+
+The ui can be deployed via CDN.
+Cloud hosting aws, azure, heroku, firebase, google cloud, Statis only: git hub page, serge

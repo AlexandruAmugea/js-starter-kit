@@ -7,8 +7,8 @@ import compression from 'compression';
 
 const PORT = 3000;
 let app = express();
-app.user(compression());
-app.user(express.static('dist'));
+app.use(compression());
+app.use(express.static('dist'));
 
 app.get('/', (req, res)=> {
   res.sendFile(path.join(__dirname, '../dist/index.html'));
